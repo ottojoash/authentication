@@ -48,26 +48,55 @@ class _LoginScreenState extends State<LoginScreen> {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.start,
-        children: const [
-          Text("My APP TITLE",style: TextStyle(color: Colors.black,
+        children:  [
+          const Text("My APP TITLE",style: TextStyle(color: Colors.black,
            fontSize:28.0,
            fontWeight: FontWeight.bold),
            ),
-           Text("Login to your app",
+           const Text("Login to your app",
            style: TextStyle(color: Colors.black,
            fontSize: 44.0,
            fontWeight: FontWeight.bold),
            ),//text
-           SizedBox(
+           const SizedBox(
             height: 44.0,
             ),
-            TextField(
+            const TextField(
               keyboardType: TextInputType.emailAddress,
               decoration: const InputDecoration(
                 hintText: "user email",
                 prefixIcon: Icon(Icons.mail,color: Colors.black),
               ),
-            )
+            ),
+            const SizedBox(
+              height: 26.0,
+            ),
+            const TextField(
+              obscureText: true,
+              decoration: InputDecoration(
+                hintText: "user password",
+                prefixIcon: Icon(Icons.lock, color: Colors.black),
+              ),
+            ),
+            const SizedBox(height: 12.0,
+            ),
+            const Text("Dont remember your password?",
+            style: TextStyle(color: Colors.blue),
+            ),
+            const SizedBox(
+              height: 88.0,
+            ),
+            Container(
+              width: double.infinity,
+              child: RawMaterialButton(
+                fillColor: Color(0xFF0069FE),
+                elevation: 0.0,
+                padding: EdgeInsets.symmetric(vertical: 20.0),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(12.0)),
+                onPressed: (){},
+                child:Text("Login"),),
+            ),
         ],
       ),
     );
