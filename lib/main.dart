@@ -11,26 +11,24 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: ,
+      home: HomePage,
     );
   }
 }
 
 /*create the main layout of the app*/
 
-class HomePage extends StatefulWidget{
-  const HomePage({Key? key}): super(key: key);
+class HomePage extends StatefulWidget {
+  const HomePage({Key? key}) : super(key: key);
 
   @override
   _HomePageState createState() => _HomePageState();
 }
 
-class _HomePageState extends State<HomePage>{
+class _HomePageState extends State<HomePage> {
   @override
-  Widget build(BuildContext context){
-    return Container(
-
-    );
+  Widget build(BuildContext context) {
+    return Container();
   }
 }
 
@@ -41,7 +39,9 @@ class LoginScreen extends StatefulWidget {
   _LoginScreenState createState() => _LoginScreenState();
 }
 
-class _LoginScreenState extends State<LoginScreen>{
+class _LoginScreenState extends State<LoginScreen> {
   @override
-
+  Widget build(BuildContext context) {
+    return Container();
+  }
 }
