@@ -48,8 +48,16 @@ class _LoginScreenState extends State<LoginScreen> {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          
+        children: const [
+          Text("My APP TITLE",style: TextStyle(color: Colors.black,
+           fontSize:28.0,
+           fontWeight: FontWeight.bold),
+           ),
+           Text("Login to your app",
+           style: TextStyle(color: Colors.black,
+           fontSize: 44.0,
+           fontWeight: FontWeight.bold),
+           ),
         ],
       ),
     );
