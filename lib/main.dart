@@ -10,7 +10,9 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp();
+    return MaterialApp(
+      home: ,
+    );
   }
 }
 
@@ -21,4 +23,9 @@ class LoginScreen extends StatefulWidget {
 
   @override
   _LoginScreenState createState() => _LoginScreenState();
+}
+
+class _LoginScreenState extends State<LoginScreen>{
+  @override
+
 }
