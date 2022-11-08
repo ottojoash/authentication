@@ -18,6 +18,13 @@ class MyApp extends StatelessWidget {
 
 /*create the main layout of the app*/
 
+class HomePage extends StatefulWidget{
+  const HomePage({Key? key}): super(key: key);
+
+  @override
+  
+}
+
 class LoginScreen extends StatefulWidget {
   const LoginScreen({Key? key}) : super(key: key);
 
