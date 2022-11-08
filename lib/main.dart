@@ -57,7 +57,17 @@ class _LoginScreenState extends State<LoginScreen> {
            style: TextStyle(color: Colors.black,
            fontSize: 44.0,
            fontWeight: FontWeight.bold),
-           ),
+           ),//text
+           SizedBox(
+            height: 44.0,
+            ),
+            TextField(
+              keyboardType: TextInputType.emailAddress,
+              decoration: const InputDecoration(
+                hintText: "user email",
+                prefixIcon: Icon(Icons.mail,color: Colors.black),
+              ),
+            )
         ],
       ),
     );
