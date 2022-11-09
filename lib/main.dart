@@ -145,11 +145,14 @@ class _LoginScreenState extends State<LoginScreen> {
             child: RawMaterialButton(
               fillColor: Color(0xFF0069FE),
               elevation: 0.0,
-              padding: EdgeInsets.symmetric(vertical: 20.0),
+              padding: const EdgeInsets.symmetric(vertical: 20.0),
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(12.0)),
-              onPressed: () {},
-              child: Text(
+              onPressed: () async {
+                //lets test the app
+                User? user = await LoginUsingEmailPassword(email: _emailController.text, password: _passwordController.text, context: context) as User?
+              },
+              child: const Text(
                 "Login",
                 style: TextStyle(
                   color: Colors.white,
