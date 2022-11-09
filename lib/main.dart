@@ -156,7 +156,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     context: context);
                 print(user);
                 if(user != null){
-                  Navigatior.of(context).pushReplacement(MaterialPageRoute(builder: (context)=> ProfileScreen()));
+                  Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context)=> ProfileScreen()));
                   //lets make a new screen
                 }
               },
