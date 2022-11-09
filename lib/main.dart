@@ -150,7 +150,15 @@ class _LoginScreenState extends State<LoginScreen> {
                   borderRadius: BorderRadius.circular(12.0)),
               onPressed: () async {
                 //lets test the app
-                User? user = await LoginUsingEmailPassword(email: _emailController.text, password: _passwordController.text, context: context) as User?
+                User? user = await LoginUsingEmailPassword(
+                    email: _emailController.text,
+                    password: _passwordController.text,
+                    context: context);
+                print(user);
+                if(user != null){
+                  Navigatior.of(context).pushReplacement(MaterialPageRoute(builder: (context)=> ProfileScreen()));
+                  //lets make a new screen
+                }
               },
               child: const Text(
                 "Login",
