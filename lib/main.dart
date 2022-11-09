@@ -19,6 +19,7 @@ class MyApp extends StatelessWidget {
 /* 1.create the main layout of the app
 2.login into the firebase
 3.add firebase dependecies for flutter
+4.initate the firebase app
 */
 
 class HomePage extends StatefulWidget {
