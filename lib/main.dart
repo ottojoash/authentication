@@ -23,6 +23,7 @@ class MyApp extends StatelessWidget {
 3.add firebase dependecies for flutter
 4.initate the firebase app
 5. create login functon
+6. create a new user inside our base
 */
 
 class HomePage extends StatefulWidget {
