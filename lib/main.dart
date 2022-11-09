@@ -1,3 +1,4 @@
+import 'package:authentication/profile_screen.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
@@ -24,6 +25,7 @@ class MyApp extends StatelessWidget {
 4.initate the firebase app
 5. create login functon
 6. create a new user inside our base
+8. inut data and test app
 */
 
 class HomePage extends StatefulWidget {
