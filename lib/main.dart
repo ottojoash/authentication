@@ -16,8 +16,9 @@ class MyApp extends StatelessWidget {
   }
 }
 
-/*create the main layout of the app
-login into the firebase
+/* 1.create the main layout of the app
+2.login into the firebase
+3.add firebase dependecies for flutter
 */
 
 class HomePage extends StatefulWidget {
