@@ -16,7 +16,9 @@ class MyApp extends StatelessWidget {
   }
 }
 
-/*create the main layout of the app*/
+/*create the main layout of the app
+login into the firebase
+*/
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -95,7 +97,9 @@ class _LoginScreenState extends State<LoginScreen> {
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(12.0)),
                 onPressed: (){},
-                child:Text("Login"),),
+                child:Text("Login",style:TextStyle(
+                  color: Colors.white,
+                  fontSize: 18.0,),),),
             ),
         ],
       ),
